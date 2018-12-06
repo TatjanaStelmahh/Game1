@@ -7,9 +7,21 @@
     <property name="Class" value="Player"/>
    </properties>
   </tile>
+  <tile id="169">
+   <properties>
+    <property name="" value=""/>
+   </properties>
+  </tile>
+  <tile id="170">
+   <properties>
+    <property name="Class" value="GroundEnemy"/>
+    <property name="sheet" value="blue-alien"/>
+   </properties>
+  </tile>
  </tileset>
  <layer name="background1" width="20" height="20">
   <properties>
+   <property name="boundingBox" value="true"/>
    <property name="type" value="0"/>
   </properties>
   <data>
@@ -1230,6 +1242,8 @@
   </data>
  </layer>
  <objectgroup name="Object Layer 1" width="20" height="20">
-  <object gid="20" x="194" y="185"/>
+  <object gid="20" x="197" y="183"/>
+  <object gid="171" x="132" y="231"/>
+  <object gid="171" x="227" y="272"/>
  </objectgroup>
 </map>
