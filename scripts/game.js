@@ -11,7 +11,11 @@ window.addEventListener("load",function() {
     Q.setImageSmoothing(false);
 
     Q.scene("level",function(stage) {
-      Q.stageTMX("small_level.tmx",stage);      
+      var player;
+      Q.stageTMX("small_level.tmx",stage);  
+      
+      player = Q("Player").first();
+      stage.add("viewport").follow(player, {x: true, y: true});
     });
 
     //load assets
